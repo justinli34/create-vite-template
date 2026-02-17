@@ -1,6 +1,7 @@
 # Create Vite Template
 
 This template provides a minimal setup for a static site using:
+
 - React
 - TypeScript
 - Vite
