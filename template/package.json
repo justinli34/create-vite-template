@@ -10,7 +10,8 @@
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
     "fmt": "oxfmt",
-    "fmt:check": "oxfmt --check"
+    "fmt:check": "oxfmt --check",
+    "check": "tsc --noEmit && oxlint && oxfmt --check"
   },
   "dependencies": {
     "react": "^19.2.0",
