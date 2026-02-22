@@ -17,9 +17,16 @@ try {
 
 await cp(from, to, { recursive: true });
 
-const pkgPath = resolve(to, "package.json");
-const pkg = await readFile(pkgPath, "utf8");
-await writeFile(pkgPath, pkg.replace(/vite-template/, target));
+const files = [
+  resolve(to, "package.json"),
+  resolve(to, "index.html"),
+  resolve(to, "src/App.tsx"),
+]
+
+for (const file of files) {
+  const content = await readFile(file, "utf8");
+  await writeFile(file, content.replace(/vite-template/g, target));
+}
 
 const gitignore = resolve(to, "_gitignore");
 await rename(gitignore, resolve(to, ".gitignore"));

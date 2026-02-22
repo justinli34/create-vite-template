@@ -3,7 +3,7 @@ import "./App.css";
 const App = () => {
   return (
     <div className="container">
-      <h1>Vite Template</h1>
+      <h1>vite-template</h1>
       <p>Hello, world!</p>
     </div>
   );
