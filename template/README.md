@@ -16,6 +16,7 @@ pnpm dev
 ```
 
 ## Scripts
+
 - `pnpm dev`: Start the development server
 - `pnpm build`: Build for production
 - `pnpm preview`: Preview the production build locally
