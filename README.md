@@ -42,6 +42,5 @@ pnpm dev
 - `pnpm preview`: Preview the production build locally
 - `pnpm lint`: Run Oxlint to check for linting errors
 - `pnpm lint:fix`: Run Oxlint to fix linting errors
-- `pnpm fmt`: Run Oxfmt to format code
-- `pnpm fmt:check`: Run Oxfmt to check if code is formatted
-- `pnpm check`: Run TypeScript, Oxlint, and Oxfmt checks
+- `pnpm format`: Run Oxfmt to format code
+- `pnpm check`: Run type checker and linter
